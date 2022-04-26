@@ -120,6 +120,7 @@ h1 {
 
 .correct {
     background-color: #32CD32 !important;
+    color: #FFF !important;
 }
 
 #alert {
