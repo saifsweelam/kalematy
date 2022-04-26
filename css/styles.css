@@ -1,0 +1,179 @@
+html,
+button,
+input {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+
+    html,
+    button,
+    input {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    html,
+    button,
+    input {
+        font-size: 22px;
+    }
+}
+
+
+body,
+div,
+section,
+header,
+footer,
+article,
+nav,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input {
+    background-color: #121212;
+    color: #FFF;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+svg {
+    fill: #FFF;
+}
+
+button {
+    border: none;
+    outline: none;
+    transition: background-color 0.4s;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.guesses .guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.guesses .guess .letter {
+    width: 75px;
+    height: 75px;
+    margin: 0 0.25rem;
+    transition: background-color 1s 0.4s;
+}
+
+.letter {
+    background-color: #858585;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm {
+    background-color: #228B22;
+}
+
+#newGame {
+    border-radius: 7px;
+    padding: 0.25rem 0.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.delete {
+    padding: 0.25rem;
+    background-color: #FFF0;
+}
+
+.letter.wrong {
+    background-color: #545454;
+    color: #C6C6C6;
+}
+
+.wrong-position {
+    background-color: #ffae42;
+}
+
+.correct {
+    background-color: #32CD32 !important;
+}
+
+#alert {
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#alert a, #footer a {
+    color: #FFF;
+}
+
+.keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.keyboard .letter {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.keyboard .letter.confirm {
+    width: 75px;
+}
+
+.keyboard .letter.delete {
+    width: 60px;
+}
+
+.keyboard .letter.confirm:hover, #newGame:hover {
+    background-color: #006400;
+}
+
+#footer {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    background-color: #202020;
+}
+
+@media screen and (max-width: 576px) {
+    .guesses .guess .letter {
+        width: 50px;
+        height: 50px;
+    }
+
+    .keyboard .letter {
+        width: 35px;
+        height: 35px;
+    }
+}
