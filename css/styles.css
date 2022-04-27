@@ -60,6 +60,11 @@ button {
     transition: background-color 0.4s;
 }
 
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
 h1 {
     margin-bottom: 1.5rem;
 }
@@ -105,6 +110,7 @@ h1 {
 }
 
 .delete {
+    font-size: 1.7rem;
     padding: 0.25rem;
     background-color: #FFF0;
 }
